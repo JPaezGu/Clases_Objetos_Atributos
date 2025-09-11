@@ -10,18 +10,18 @@
 Paso N_01
 -Se empieza creando una clase, en este caso será una clase llamada Perro con dos atributos: nombre y felicidad (definida con valor 0 para actualizar su valor por cada acción de felicidad):
 
-def ladrar(self):
+    def ladrar(self):
         return f"{self.nombre}: Guau Guau"
 
 
 Paso N_02
 -El método hacer_feliz recibe una acción y aumenta la felicidad del perro un 25% por cada una, hasta un máximo del 100% de felicidad:
 
-def hacer_feliz(self, accion):
-    if self.felicidad < 100:
-        self.felicidad += 25
-        if self.felicidad > 100:
-            self.felicidad = 100
+    def hacer_feliz(self, accion):
+        if self.felicidad < 100:
+            self.felicidad += 25
+            if self.felicidad > 100:
+                self.felicidad = 100
 
 
 Paso N_03
@@ -36,23 +36,23 @@ Dependiendo de la acción elegida (jugar, alimentar o acariciar), se imprimirá 
 Paso N_04
 - Se una el comando input para pedir el nombre del perro, con el fin de crear un objeto de la clase Perro con el mismo nombre:
 
-nombre_perro = input("Ingrese el nombre del perro: ")
-perro1 = Perro(nombre_perro)
+    nombre_perro = input("Ingrese el nombre del perro: ")
+    perro1 = Perro(nombre_perro)
 
 
 Paso N_05
 -Se usa el bucle while que permite al usuario elegir entre las 3 acciones disponibles para hacer feliz al perro, hasta que su felicidad llegue al 100% (límite):
 
-while perro1.felicidad < 100:
-    accion = input(f"Elija cómo quiere hacer feliz a {perro1.nombre}:\n- jugar\n- alimentar\n- acariciar\n")
-    perro1.hacer_feliz(accion)
+    while perro1.felicidad < 100:
+        accion = input(f"Elija cómo quiere hacer feliz a {perro1.nombre}:\n- jugar\n- alimentar\n- acariciar\n")
+        perro1.hacer_feliz(accion)
 
 
 Paso N_06
 -Si la felicidad del perro llega al 100%, se imprimirá un mensaje (con el nombre del perro) indicando que está completamente feliz, luego, se llama a la acción .ladrar para que el perro ladre de felicidad:
 
-print(f"\n {perro1.nombre} ahora está completamente feliz")
-print(perro1.ladrar())
+    print(f"\n {perro1.nombre} ahora está completamente feliz")
+    print(perro1.ladrar())
 
     RESULTADO - SALIDA
 
