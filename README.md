@@ -34,10 +34,10 @@ Dependiendo de la acción elegida (jugar, alimentar o acariciar), se imprimirá 
 
 
 Paso N_04
-- Se una el comando input para pedir el nombre del perro, con el fin de crear un objeto de la clase Perro con el mismo nombre:
+- Se usa el comando input para pedir el nombre del perro, con el fin de crear un objeto de la clase Perro con el mismo nombre:
 
     nombre_perro = input("Ingrese el nombre del perro: ")
-    perro1 = Perro(nombre_perro)
+        perro1 = Perro(nombre_perro)
 
 
 Paso N_05
